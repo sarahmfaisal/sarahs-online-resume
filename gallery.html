@@ -1,0 +1,1004 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery - Sarah Binti Mohammad Faisal</title>
+</head>
+<body>
+
+ <style>
+ 
+   .social-links {
+        display: flex;
+        gap: 15px;
+        margin-top: 15px;
+    }
+
+    .social-icon {
+        width: 40px;
+        height: 40px;
+        background: white;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+        font-weight: bold;
+        color: #667eea;
+        transition: all 0.3s ease;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    }
+
+    .social-icon:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 6px 20px rgba(102, 126, 234, 0.5);
+        background: #667eea;
+        color: white;
+    }
+	
+    * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+		
+		
+.main-title {
+  text-align: center;
+  font-size: 50px;
+  font-weight: bold;
+  margin-top: 30px;
+  margin-bottom: 5px;
+  font-family: 'Times New Roman', serif;
+  color: black;
+  border: 3px solid black;       /* Frame */
+  padding: 15px 30px;            /* Space inside frame */
+  display: inline-block;         /* Shrink to fit text */
+  border-radius: 12px;           /* Rounded corners */
+  background-color: white;       /* Optional */
+}
+
+.title-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;  /* vertically aligned */
+  gap: 20px;            /* space between photo and text */
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
+.title-photo {
+  width: 200px;          /* adjust size */
+  height: 200px;
+  border-radius: 50%;   /* make photo round */
+  object-fit: cover;
+  border: 3px solid black;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: white;
+  background-color: #333;
+  padding: 10px 18px;
+  border-radius: 10px;
+  margin: 10px;
+  font-weight: bold;
+  display: inline-block;
+}
+
+.nav-link:hover {
+  background-color: #555;
+}
+
+		
+body {
+background-image:url('OIP.jpg');
+background-repeat: no-repeat;
+background-attachment:fixed;
+background-size:cover;
+
+}
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+        section {
+            margin-bottom: 50px;
+            padding: 30px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        h2 {
+            color: #667eea;
+            font-size: 1.4em;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 3px solid #667eea;
+       }
+       
+         .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            margin-top: 20px;
+        }
+        .skill-item {
+            background: #f8f9fa;
+            padding: 15px 20px;
+            border-radius: 8px;
+            border-left: 4px solid #667eea;
+            transition: transform 0.3s;
+        }
+        .skill-item:hover {
+            transform: translateX(5px);
+            background: #e9ecef;
+        }
+        .education-item, .work-item {
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            margin-bottom: 15px;
+            border-left: 4px solid #764ba2;
+        }
+        .work-title {
+            color: black;
+            font-size: 1.2em;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        .date {
+            color: #888;
+            font-style: italic;
+            margin-bottom: 10px;
+        }
+		
+   /* Activities Grid */
+    .activities-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+        gap: 30px;
+        margin-bottom: 50px;
+    }
+
+    /* Smaller cards for specific categories */
+    .activity-card.small-card {
+        grid-column: span 1;
+    }
+
+    .activity-card.small-card .card-image {
+        height: 50px;
+        font-size: 3em;
+    }
+
+    .activity-card.small-card .card-content {
+        padding: 20px;
+    }
+
+    .activity-card.small-card .card-title {
+        font-size: 1.2em;
+    }
+
+    /* Activity Card */
+    .activities-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+        gap: 30px;
+        margin-bottom: 50px;
+    }
+
+    /* Smaller cards for specific categories */
+    .activity-card.small-card {
+        grid-column: span 1;
+    }
+
+    .activity-card.small-card .card-image {
+        height: 150px;
+        font-size: 3em;
+    }
+
+    .activity-card.small-card .card-content {
+        padding: 20px;
+    }
+
+    .activity-card.small-card .card-title {
+        font-size: 1.2em;
+    }
+
+    /* Activity Card */
+    .activity-card {
+        background: white;
+        border-radius: 20px;
+        overflow: hidden;
+        box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+        transition: all 0.4s ease;
+        animation: slideUp 0.6s ease-out;
+        animation-fill-mode: both;
+		margin-left: 20px;
+		margin-right: 20px;
+    }
+
+    .activity-card:nth-child(1) { animation-delay: 0.1s; }
+    .activity-card:nth-child(2) { animation-delay: 0.2s; }
+    .activity-card:nth-child(3) { animation-delay: 0.3s; }
+    .activity-card:nth-child(4) { animation-delay: 0.4s; }
+    .activity-card:nth-child(5) { animation-delay: 0.5s; }
+    .activity-card:nth-child(6) { animation-delay: 0.6s; }
+
+    @keyframes slideUp {
+        from {
+            opacity: 0;
+            transform: translateY(50px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    .activity-card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 15px 40px rgba(0,0,0,0.3);
+    }
+
+   .card-image {
+        width: 100%;
+        height: 220px;
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 4em;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .card-image img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+    .card-image .icon-overlay {
+        position: relative;
+        z-index: 1;
+        text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+    }
+	
+    /* Fallback gradient animation for cards without images */
+    .card-image.no-image::before {
+        content: '';
+        position: absolute;
+        top: -50%;
+        left: -50%;
+        width: 200%;
+        height: 200%;
+        background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, transparent 70%);
+        animation: rotate 10s linear infinite;
+    }
+
+    @keyframes rotate {
+        from { transform: rotate(0deg); }
+        to { transform: rotate(360deg); }
+    }
+
+    .card-content {
+        padding: 25px;
+    }
+
+    .card-category {
+        display: inline-block;
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        color: white;
+        padding: 5px 15px;
+        border-radius: 15px;
+        font-size: 0.85em;
+        font-weight: bold;
+        margin-bottom: 15px;
+    }
+
+    .card-title {
+        font-size: 1.5em;
+        color: #333;
+        margin-bottom: 10px;
+        font-weight: bold;
+    }
+
+    .card-role {
+        color: #667eea;
+        font-weight: bold;
+        margin-bottom: 10px;
+        font-size: 1.05em;
+    }
+
+    .card-date {
+        color: #888;
+        font-size: 0.9em;
+        margin-bottom: 15px;
+        font-style: italic;
+    }
+
+    .card-description {
+        color: #555;
+        line-height: 1.6;
+        margin-bottom: 15px;
+    }
+
+    .card-achievements {
+        list-style: none;
+        padding: 0;
+    }
+
+    .card-achievements li {
+        padding-left: 25px;
+        margin-bottom: 8px;
+        position: relative;
+        color: #555;
+    }
+
+    .card-achievements li::before {
+        content: '✓';
+        position: absolute;
+        left: 0;
+        color: #667eea;
+        font-weight: bold;
+        font-size: 1.2em;
+    }
+    /* Timeline Section */
+    .timeline-section {
+        max-width: 800px;
+        margin: 0 auto 50px;
+        animation: fadeIn 1.8s ease-out;
+    }
+
+    .timeline-title {
+        text-align: center;
+        color: white;
+        font-size: 2em;
+        margin-bottom: 40px;
+    }
+
+    .timeline-item {
+        background: white;
+        padding: 25px;
+        border-radius: 15px;
+        margin-bottom: 20px;
+        box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+        position: relative;
+        padding-left: 60px;
+        transition: transform 0.3s ease;
+    }
+
+    .timeline-item:hover {
+        transform: translateX(10px);
+    }
+
+    .timeline-item::before {
+        content: '';
+        position: absolute;
+        left: 20px;
+        top: 25px;
+        width: 15px;
+        height: 15px;
+        background: #667eea;
+        border-radius: 50%;
+        border: 3px solid white;
+        box-shadow: 0 0 0 3px #667eea;
+    }
+
+    .timeline-year {
+        color: #667eea;
+        font-weight: bold;
+        font-size: 1.2em;
+        margin-bottom: 8px;
+		 text-allign: left;
+    }
+
+    .timeline-content {
+	    text-align: centre;
+            color: #888;
+            font-style: italic;
+    }
+
+  .timeline-text {
+	    text-align: left;
+        color: #555;
+    }
+	
+    /* Responsive Design */
+    @media (max-width: 768px) {
+        .page-header h1 {
+            font-size: 2em;
+        }
+
+        .activities-grid {
+            grid-template-columns: 1fr;
+        }
+
+        .filter-tabs {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .filter-btn {
+            width: 80%;
+        }
+    }
+.side-container {
+    display: flex;            /* IMPORTANT */
+    gap: 30px;                /* space between boxes */
+    align-items: flex-start;  /* align top */
+    justify-content: center;  /* center the whole layout */
+    width: 100%;
+    margin-top: 20px;
+}
+
+.photo-box {
+    width: 80px;
+    background: white;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.photo-box img {
+    width: 10px;
+    height: 10px;
+    object-fit: cover;
+    border-radius: 20px;
+    border: 4px solid #3f51b5;
+}
+
+ 
+
+    /* Section Title */
+    .section-title {
+        color: black;
+        font-size: 2em;
+        text-align: center;
+        margin: 20px 0 30px;
+        text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+    }
+
+    /* Photo Gallery Grid */
+    .gallery-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        gap: 25px;
+        margin-bottom: 50px;
+    }
+
+    .gallery-item {
+        position: relative;
+        border-radius: 15px;
+        overflow: hidden;
+        box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+        cursor: pointer;
+        transition: all 0.4s ease;
+        animation: slideUp 0.6s ease-out;
+        animation-fill-mode: both;
+        background: white;
+    }
+
+    .gallery-item:nth-child(1) { animation-delay: 0.1s; }
+    .gallery-item:nth-child(2) { animation-delay: 0.2s; }
+    .gallery-item:nth-child(3) { animation-delay: 0.3s; }
+    .gallery-item:nth-child(4) { animation-delay: 0.4s; }
+    .gallery-item:nth-child(5) { animation-delay: 0.5s; }
+    .gallery-item:nth-child(6) { animation-delay: 0.6s; }
+
+    @keyframes slideUp {
+        from {
+            opacity: 0;
+            transform: translateY(50px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    .gallery-item:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 15px 40px rgba(0,0,0,0.4);
+    }
+
+    .gallery-image {
+        width: 100%;
+        height: 350px;
+        object-fit: cover;
+        transition: transform 0.4s ease;
+    }
+
+    .gallery-item:hover .gallery-image {
+        transform: scale(1.1);
+    }
+
+    .gallery-overlay {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: linear-gradient(to top, rgba(0,0,0,0.8), transparent);
+        padding: 20px;
+        transform: translateY(100%);
+        transition: transform 0.3s ease;
+    }
+
+    .gallery-item:hover .gallery-overlay {
+        transform: translateY(0);
+    }
+
+    .gallery-title {
+        color: white;
+        font-size: 1.3em;
+        font-weight: bold;
+        margin-bottom: 5px;
+    }
+
+    .gallery-description {
+        color: rgba(255,255,255,0.9);
+        font-size: 0.95em;
+    }
+
+    /* Video Section */
+    .videos-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+        gap: 30px;
+        margin-bottom: 50px;
+    }
+
+    .video-card {
+        background: white;
+        border-radius: 15px;
+        overflow: hidden;
+        box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+        transition: all 0.4s ease;
+        animation: slideUp 0.8s ease-out;
+    }
+
+    .video-card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 15px 40px rgba(0,0,0,0.4);
+    }
+
+    .video-container {
+        position: relative;
+        width: 100%;
+        padding-bottom: 56.25%; /* 16:9 aspect ratio */
+        background: #000;
+        overflow: hidden;
+    }
+
+    .video-container iframe,
+    .video-container video {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border: none;
+    }
+
+    .video-placeholder {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 4em;
+        color: white;
+    }
+    .video-info {
+        padding: 20px;
+    }
+
+    .video-title {
+        color: #333;
+        font-size: 1.2em;
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
+
+    .video-description {
+        color: #666;
+        line-height: 1.6;
+        margin-bottom: 10px;
+    }
+
+    .video-meta {
+        display: flex;
+        gap: 15px;
+        font-size: 0.9em;
+        color: #888;
+		justify-content: center;
+    }
+
+     .filter-btn {
+        background: rgba(255,255,255,0.2);
+        color: white;
+        border: 2px solid white;
+        padding: 12px 30px;
+        border-radius: 30px;
+        cursor: pointer;
+        font-weight: bold;
+        font-size: 1em;
+        transition: all 0.3s ease;
+        backdrop-filter: blur(10px);
+    }
+
+    .filter-btn:hover,
+    .filter-btn.active {
+        background: white;
+        color: #667eea;
+        transform: scale(1.05);
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+        .page-header h1 {
+            font-size: 2.5em;
+        }
+
+        .gallery-grid {
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 15px;
+        }
+
+        .gallery-image {
+            height: 250px;
+        }
+
+        .videos-grid {
+            grid-template-columns: 1fr;
+        }
+
+        .filter-tabs {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .filter-btn {
+            width: 80%;
+        }
+		 /* Lightbox Modal */
+    .lightbox {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0,0,0,0.95);
+        z-index: 1000;
+        align-items: center;
+        justify-content: center;
+        animation: fadeIn 0.3s ease;
+    }
+
+    .lightbox.active {
+        display: flex;
+    }
+
+    .lightbox-content {
+        max-width: 90%;
+        max-height: 90%;
+        position: relative;
+    }
+
+    .lightbox-image {
+        max-width: 100%;
+        max-height: 90vh;
+        border-radius: 10px;
+        box-shadow: 0 10px 50px rgba(0,0,0,0.5);
+    }
+
+    .lightbox-close {
+        position: absolute;
+        top: -40px;
+        right: 0;
+        color: white;
+        font-size: 2em;
+        cursor: pointer;
+        background: rgba(255,255,255,0.2);
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: all 0.3s ease;
+    }
+
+    .lightbox-close:hover {
+        background: white;
+        color: #667eea;
+        transform: rotate(90deg);
+    }
+
+    .lightbox-caption {
+        color: white;
+        text-align: center;
+        margin-top: 20px;
+        font-size: 1.2em;
+    }
+
+     /* Responsive Design */
+    @media (max-width: 768px) {
+        .page-header h1 {
+            font-size: 2.5em;
+        }
+
+        .gallery-grid {
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 15px;
+        }
+
+        .gallery-image {
+            height: 250px;
+        }
+
+        .videos-grid {
+            grid-template-columns: 1fr;
+        }
+
+        .filter-tabs {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .filter-btn {
+            width: 80%;
+        }
+    }
+</style>
+	
+<div class="title-container">
+    <img src="enhance.png" class="title-photo" alt="Sarah's Photo">
+        <h1 class="main-title">Sarah Binti Mohammad Faisal</h1>
+        <br>
+        <div class="social-links">
+            <a href="https://www.linkedin.com/in/sarah-mohammad-faisal-ba0907373/" target="_blank"class="social-icon" title="Email">ld</a>
+            <a href="https://wa.me/qr/L4J2UEE3RSELC1"target="_blank"class="social-icon" title="Whatsapp">wa</a>
+            <a href="https://www.instagram.com/ssarahhfaisal/"target="_blank" class="social-icon" title="Instagram">ig</a>
+        </div>
+</div>
+
+<h3 align="center">
+<font face= "Arial">
+<a class="nav-link" href= "index.html"> HOME </a> &nbsp;&nbsp;&nbsp;&nbsp;
+<a class="nav-link" href= "biodata.html"> BIODATA </a>&nbsp;&nbsp;&nbsp;&nbsp;
+<a class="nav-link" href= "koko.html"> EXTRA CURICCULAR </a>&nbsp;&nbsp;&nbsp;&nbsp;
+<a class="nav-link" href= "gallery.html"> GALLERY </a>&nbsp;&nbsp;&nbsp;&nbsp;
+</font>
+
+<div class= "container"> 
+
+<button class="filter-btn active" onclick="filterContent('all', this)">🌟 All</button>
+<button class="filter-btn" onclick="filterContent('photos', this)">📷 Photos</button>
+
+
+	
+    <!-- Photo Gallery Section -->
+    <div id="photos-section">
+        <h2 class="section-title">📷 Photo Gallery</h2>
+        <div class="gallery-grid">
+           
+            <div class="gallery-item" onclick="openLightbox('pic1.jpeg', 'University Event')">
+                <img src="pic3.jpeg" alt="University Event" class="gallery-image">
+                <div class="gallery-overlay">
+                    <div class="gallery-title">Student's Council</div>
+                    <div class="gallery-description">High School - 2021</div>
+                </div>
+            </div>
+
+            <div class="gallery-item" onclick="openLightbox('pic2.jpeg', 'Drama Performance')">
+                <img src="pic2.jpeg" alt="Drama Performance" class="gallery-image">
+                <div class="gallery-overlay">
+                    <div class="gallery-title">Sports Day</div>
+                    <div class="gallery-description">High School - 2022</div>
+                </div>
+            </div>
+
+            <div class="gallery-item" onclick="openLightbox('pic3.jpeg', 'Tech Workshop')">
+                <img src="pic5.jpeg" alt="Tech Workshop" class="gallery-image">
+                <div class="gallery-overlay">
+                    <div class="gallery-title">Couleur Run</div>
+                    <div class="gallery-description">University - 2023</div>
+                </div>
+            </div>
+
+            <div class="gallery-item" onclick="openLightbox('photo4.jpg', 'Volunteer Work')">
+                <img src="pic1.jpeg" alt="Volunteer Work" class="gallery-image">
+                <div class="gallery-overlay">
+                    <div class="gallery-title">Club's Photoshoot</div>
+                    <div class="gallery-description">University - 2025</div>
+                </div>
+            </div>
+
+            <div class="gallery-item" onclick="openLightbox('pic5.jpeg', 'Futsal Tournament')">
+                <img src="pic4.jpeg" alt="Futsal Tournament" class="gallery-image">
+                <div class="gallery-overlay">
+                    <div class="gallery-title">Raya Celebration</div>
+                    <div class="gallery-description">University - 2025</div>
+                </div>
+            </div>
+
+            <div class="gallery-item" onclick="openLightbox('pic6.jpeg', 'Graduation Day')">
+                <img src="pic6.jpeg" alt="Graduation Day" class="gallery-image">
+                <div class="gallery-overlay">
+                    <div class="gallery-title">First Syawal</div>
+                    <div class="gallery-description">Home - 2025</div>
+                </div>
+            </div>
+
+        </div>
+ 
+
+    <!-- Video Section -->
+    <div id="videos-section">
+        <h2 class="section-title">🎥 Video Collection</h2>
+        <div class="videos-grid">
+            
+            <!-- Video Card 1 -->
+            <div class="video-card">
+                <div class="video-container">
+                    <div class="video-placeholder"></div>
+                    <video controls>
+                        <source src="video1.mp4" type="video/mp4">
+                  </video>
+                </div>
+                <div class="video-info">
+                    <div class="video-title">Talk Show Mental Health: Self-Love Awareness </div>
+                    <div class="video-description">
+                        A video with all the committee members after the program with the speaker Emir Haqim.
+                    </div>
+                    <div class="video-meta">
+                        <span>📅 June 2024</span>
+                    </div>
+                </div>
+            </div>
+
+             <!-- Video Card 1 -->
+            <div class="video-card">
+                <div class="video-container">
+                    <div class="video-placeholder"></div>
+                    <video controls>
+                        <source src="video2.mp4" type="video/mp4">
+                  </video>
+                </div>
+                <div class="video-info">
+                    <div class="video-title">Club's Activities Promotional Video</div>
+                    <div class="video-description">
+                        Promotional video to be uploaded on the club's social media.
+                    </div>
+                    <div class="video-meta">
+                        <span>📅 June 2024</span>
+                    </div>
+                </div>
+            </div>
+
+ <!-- Video Card 1 -->
+            <div class="video-card">
+                <div class="video-container">
+                    <div class="video-placeholder"></div>
+                    <video controls>
+                        <source src="video4.mp4" type="video/mp4">
+                  </video>
+                </div>
+                <div class="video-info">
+                    <div class="video-title">Student's Parliament 24/25</div>
+                    <div class="video-description">
+                        A farewell video with all the committee members for our last program.
+                    </div>
+                    <div class="video-meta">
+                        <span>📅 October 2025</span>
+                    </div>
+                </div>
+            </div>
+
+             <!-- Video Card 1 -->
+            <div class="video-card">
+                <div class="video-container">
+                    <div class="video-placeholder"></div>
+                    <video controls>
+                        <source src="video3.mp4" type="video/mp4">
+                  </video>
+                </div>
+                <div class="video-info">
+                    <div class="video-title">Dean's Award Ceremony</div>
+                    <div class="video-description">
+                        Attend the ceremony to take the Dean's Award Certification.
+                    </div>
+                    <div class="video-meta">
+                        <span>📅October 2025</span>
+                    </div>
+                </div>
+            </div>
+           
+
+            
+
+        </div>
+    </div>
+</div>
+</div>
+
+</div>
+
+
+<!-- Lightbox Modal -->
+
+<div class="lightbox" id="lightbox" onclick="closeLightbox()">
+    <div class="lightbox-content" onclick="event.stopPropagation()">
+        <span class="lightbox-close" onclick="closeLightbox()"></span>
+        <img id="lightbox-img" class="lightbox-image" src="" alt="">
+        <div id="lightbox-caption" class="lightbox-caption"></div>
+    </div>
+</div>
+
+<script>
+// Filter functionality
+function filterContent(type, btn) {
+    const photosSection = document.getElementById('photos-section');
+    const videosSection = document.getElementById('videos-section');
+    const buttons = document.querySelectorAll('.filter-btn');
+
+    // Remove active class
+    buttons.forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+
+    // Show / hide sections
+    if (type === 'all') {
+        photosSection.style.display = 'block';
+        videosSection.style.display = 'block';
+    } 
+    else if (type === 'photos') {
+        photosSection.style.display = 'block';
+        videosSection.style.display = 'none';
+    } 
+    else if (type === 'videos') {
+        photosSection.style.display = 'none';
+        videosSection.style.display = 'block';
+    }
+}
+
+// Lightbox functions (if you want the photo click feature)
+function openLightbox(imageSrc, caption) {
+    const lightbox = document.getElementById('lightbox');
+    const lightboxImg = document.getElementById('lightbox-img');
+    const lightboxCaption = document.getElementById('lightbox-caption');
+    
+    lightboxImg.src = imageSrc;
+    lightboxCaption.textContent = caption;
+    lightbox.classList.add('active');
+    document.body.style.overflow = 'hidden';
+}
+
+function closeLightbox() {
+    const lightbox = document.getElementById('lightbox');
+    lightbox.classList.remove('active');
+    document.body.style.overflow = 'auto';
+}
+
+// Close lightbox with Escape key
+document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') {
+        closeLightbox();
+    }
+});
+</script>
+
+</body>
+</html>

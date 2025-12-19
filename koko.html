@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Extracurricular - Sarah Binti Mohammad Faisal</title>
+</head>
+<body>
+
+ <style>
+ 
+   .social-links {
+        display: flex;
+        gap: 15px;
+        margin-top: 15px;
+    }
+
+    .social-icon {
+        width: 40px;
+        height: 40px;
+        background: white;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+        font-weight: bold;
+        color: #667eea;
+        transition: all 0.3s ease;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    }
+
+    .social-icon:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 6px 20px rgba(102, 126, 234, 0.5);
+        background: #667eea;
+        color: white;
+    }
+	
+    * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+		
+		
+.main-title {
+  text-align: center;
+  font-size: 50px;
+  font-weight: bold;
+  margin-top: 30px;
+  margin-bottom: 5px;
+  font-family: 'Times New Roman', serif;
+  color: black;
+  border: 3px solid black;       /* Frame */
+  padding: 15px 30px;            /* Space inside frame */
+  display: inline-block;         /* Shrink to fit text */
+  border-radius: 12px;           /* Rounded corners */
+  background-color: white;       /* Optional */
+}
+
+.title-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;  /* vertically aligned */
+  gap: 20px;            /* space between photo and text */
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
+.title-photo {
+  width: 200px;          /* adjust size */
+  height: 200px;
+  border-radius: 50%;   /* make photo round */
+  object-fit: cover;
+  border: 3px solid black;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: white;
+  background-color: #333;
+  padding: 10px 18px;
+  border-radius: 10px;
+  margin: 10px;
+  font-weight: bold;
+  display: inline-block;
+}
+
+.nav-link:hover {
+  background-color: #555;
+}
+
+		
+body {
+background-image:url('OIP.jpg');
+background-repeat: no-repeat;
+background-attachment:fixed;
+background-size:cover;
+
+}
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+        section {
+            margin-bottom: 50px;
+            padding: 30px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        h2 {
+            color: #667eea;
+            font-size: 1.4em;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 3px solid #667eea;
+       }
+       
+         .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            margin-top: 20px;
+        }
+        .skill-item {
+            background: #f8f9fa;
+            padding: 15px 20px;
+            border-radius: 8px;
+            border-left: 4px solid #667eea;
+            transition: transform 0.3s;
+        }
+        .skill-item:hover {
+            transform: translateX(5px);
+            background: #e9ecef;
+        }
+        .education-item, .work-item {
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            margin-bottom: 15px;
+            border-left: 4px solid #764ba2;
+        }
+        .work-title {
+            color: black;
+            font-size: 1.2em;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        .date {
+            color: #888;
+            font-style: italic;
+            margin-bottom: 10px;
+        }
+		
+   /* Activities Grid */
+    .activities-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+        gap: 30px;
+        margin-bottom: 50px;
+    }
+
+    /* Smaller cards for specific categories */
+    .activity-card.small-card {
+        grid-column: span 1;
+    }
+
+    .activity-card.small-card .card-image {
+        height: 50px;
+        font-size: 3em;
+    }
+
+    .activity-card.small-card .card-content {
+        padding: 20px;
+    }
+
+    .activity-card.small-card .card-title {
+        font-size: 1.2em;
+    }
+
+    /* Activity Card */
+    .activities-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+        gap: 30px;
+        margin-bottom: 50px;
+    }
+
+    /* Smaller cards for specific categories */
+    .activity-card.small-card {
+        grid-column: span 1;
+    }
+
+    .activity-card.small-card .card-image {
+        height: 150px;
+        font-size: 3em;
+    }
+
+    .activity-card.small-card .card-content {
+        padding: 20px;
+    }
+
+    .activity-card.small-card .card-title {
+        font-size: 1.2em;
+    }
+
+    /* Activity Card */
+    .activity-card {
+        background: white;
+        border-radius: 20px;
+        overflow: hidden;
+        box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+        transition: all 0.4s ease;
+        animation: slideUp 0.6s ease-out;
+        animation-fill-mode: both;
+		margin-left: 20px;
+		margin-right: 20px;
+    }
+
+    .activity-card:nth-child(1) { animation-delay: 0.1s; }
+    .activity-card:nth-child(2) { animation-delay: 0.2s; }
+    .activity-card:nth-child(3) { animation-delay: 0.3s; }
+    .activity-card:nth-child(4) { animation-delay: 0.4s; }
+    .activity-card:nth-child(5) { animation-delay: 0.5s; }
+    .activity-card:nth-child(6) { animation-delay: 0.6s; }
+
+    @keyframes slideUp {
+        from {
+            opacity: 0;
+            transform: translateY(50px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    .activity-card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 15px 40px rgba(0,0,0,0.3);
+    }
+
+   .card-image {
+        width: 100%;
+        height: 220px;
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 4em;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .card-image img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+    .card-image .icon-overlay {
+        position: relative;
+        z-index: 1;
+        text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+    }
+	
+    /* Fallback gradient animation for cards without images */
+    .card-image.no-image::before {
+        content: '';
+        position: absolute;
+        top: -50%;
+        left: -50%;
+        width: 200%;
+        height: 200%;
+        background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, transparent 70%);
+        animation: rotate 10s linear infinite;
+    }
+
+    @keyframes rotate {
+        from { transform: rotate(0deg); }
+        to { transform: rotate(360deg); }
+    }
+
+    .card-content {
+        padding: 25px;
+    }
+
+    .card-category {
+        display: inline-block;
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        color: white;
+        padding: 5px 15px;
+        border-radius: 15px;
+        font-size: 0.85em;
+        font-weight: bold;
+        margin-bottom: 15px;
+    }
+
+    .card-title {
+        font-size: 1.5em;
+        color: #333;
+        margin-bottom: 10px;
+        font-weight: bold;
+    }
+
+    .card-role {
+        color: #667eea;
+        font-weight: bold;
+        margin-bottom: 10px;
+        font-size: 1.05em;
+    }
+
+    .card-date {
+        color: #888;
+        font-size: 0.9em;
+        margin-bottom: 15px;
+        font-style: italic;
+    }
+
+    .card-description {
+        color: #555;
+        line-height: 1.6;
+        margin-bottom: 15px;
+    }
+
+    .card-achievements {
+        list-style: none;
+        padding: 0;
+    }
+
+    .card-achievements li {
+        padding-left: 25px;
+        margin-bottom: 8px;
+        position: relative;
+        color: #555;
+    }
+
+    .card-achievements li::before {
+        content: '✓';
+        position: absolute;
+        left: 0;
+        color: #667eea;
+        font-weight: bold;
+        font-size: 1.2em;
+    }
+    /* Timeline Section */
+    .timeline-section {
+        max-width: 800px;
+        margin: 0 auto 50px;
+        animation: fadeIn 1.8s ease-out;
+    }
+
+    .timeline-title {
+        text-align: center;
+        color: white;
+        font-size: 2em;
+        margin-bottom: 40px;
+    }
+
+    .timeline-item {
+        background: white;
+        padding: 25px;
+        border-radius: 15px;
+        margin-bottom: 20px;
+        box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+        position: relative;
+        padding-left: 60px;
+        transition: transform 0.3s ease;
+    }
+
+    .timeline-item:hover {
+        transform: translateX(10px);
+    }
+
+    .timeline-item::before {
+        content: '';
+        position: absolute;
+        left: 20px;
+        top: 25px;
+        width: 15px;
+        height: 15px;
+        background: #667eea;
+        border-radius: 50%;
+        border: 3px solid white;
+        box-shadow: 0 0 0 3px #667eea;
+    }
+
+    .timeline-year {
+        color: #667eea;
+        font-weight: bold;
+        font-size: 1.2em;
+        margin-bottom: 8px;
+		 text-allign: left;
+    }
+
+    .timeline-content {
+	    text-align: centre;
+            color: #888;
+            font-style: italic;
+    }
+
+  .timeline-text {
+	    text-align: left;
+        color: #555;
+    }
+	
+    /* Responsive Design */
+    @media (max-width: 768px) {
+        .page-header h1 {
+            font-size: 2em;
+        }
+
+        .activities-grid {
+            grid-template-columns: 1fr;
+        }
+
+        .filter-tabs {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .filter-btn {
+            width: 80%;
+        }
+    }
+.side-container {
+    display: flex;            /* IMPORTANT */
+    gap: 30px;                /* space between boxes */
+    align-items: flex-start;  /* align top */
+    justify-content: center;  /* center the whole layout */
+    width: 100%;
+    margin-top: 20px;
+}
+
+.photo-box {
+    width: 80px;
+    background: white;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.photo-box img {
+    width: 10px;
+    height: 10px;
+    object-fit: cover;
+    border-radius: 20px;
+    border: 4px solid #3f51b5;
+}
+
+.timeline-box {
+    width: 65%;               /* timeline on the right side */
+}
+
+</style>
+
+<div class="title-container">
+    <img src="enhance.png" class="title-photo" alt="Sarah's Photo">
+        <h1 class="main-title">Sarah Binti Mohammad Faisal</h1>
+        <br>
+        <div class="social-links">
+            <a href="https://www.linkedin.com/in/sarah-mohammad-faisal-ba0907373/" target="_blank"class="social-icon" title="Email">ld</a>
+            <a href="https://wa.me/qr/L4J2UEE3RSELC1"target="_blank"class="social-icon" title="Whatsapp">wa</a>
+            <a href="https://www.instagram.com/ssarahhfaisal/"target="_blank" class="social-icon" title="Instagram">ig</a>
+        </div>
+</div>
+
+ <br/>
+<h3 align="center">
+<font face= "Arial">
+<a class="nav-link" href= "index.html"> HOME </a> &nbsp;&nbsp;&nbsp;&nbsp;
+<a class="nav-link" href= "biodata.html"> BIODATA </a>&nbsp;&nbsp;&nbsp;&nbsp;
+<a class="nav-link" href= "koko.html"> EXTRA CURICCULAR </a>&nbsp;&nbsp;&nbsp;&nbsp;
+<a class="nav-link" href= "gallery.html"> GALLERY </a>&nbsp;&nbsp;&nbsp;&nbsp;
+</font>
+
+
+<!-- Timeline Section -->
+<br><br>
+    <div class="timeline-section">
+        <h2 class="timeline-title"> Extracuricular Involvement </h2>
+        
+        <div class="timeline-item">
+            <div class="timeline-year">Secretary of Work, Student Parliament Secretariat, UiTM</div>
+            <div class="timeline-content">
+                <strong>(May 2025-Present)</strong>
+				</div>
+				<div class="timeline-text">
+                <br>Responsible for preparing application letters and paperwork to ensure the program can be carried out.
+            </div>
+        </div>
+	
+
+        <div class="timeline-item">
+            <div class="timeline-year">Vice Secretary, Inspiration Club, Segamat Campus, UiTM</div>
+            <div class="timeline-content">
+                <strong>(Jun 2023-Present)</strong><br>
+				<div class="timeline-text">
+                <br>Assisting Guidance and Counseling Unit which in improving knowledge related to mental health management among students.
+            </div>
+        </div>
+		</div>
+
+        <div class="timeline-item">
+            <div class="timeline-year">Vice President, English Motivational Committee (EMC), MRSM Gemencheh</div>
+            <div class="timeline-content">
+                <strong>(Mar 2021-Feb 2022)</strong><br>
+				<div class="timeline-text">
+                <br>Improving the level of English proficiency of all school members by carrying out activities and campaigns.
+            </div>
+        </div>
+		</div>
+
+        
+</div>
+
+<br><br>
+    <div class="timeline-section">
+        <h2 class="timeline-title"> Event Involvement </h2> </div>
+		
+		<!-- Activities Grid -->
+    <div class="activities-grid">
+        <!-- Activity Card 1 -->
+        <div class="activity-card">
+            <div class="card-image"><img src= "koko1.jpg" alt="photo"></div>
+            <div class="card-content">
+                <span class="card-category">Organization</span>
+                <h3 class="card-title">Student Parliament Session 2024/2025</h3>
+                <p class="card-role">Secretary</p>
+                <p class="card-date">October 2025</p>
+                
+            </div>
+        </div>
+
+	        <!-- Activity Card 2 -->
+        <div class="activity-card">
+            <div class="card-image"><img src= "koko3.jpg" alt="photo"></div>
+            <div class="card-content">
+                <span class="card-category">Club</span>
+                <h3 class="card-title">Talk Show Mental Health: Self-Love Awareness</h3>
+                <p class="card-role">Committee Member</p>
+                <p class="card-date"> June 2024 </p>
+                
+            </div>
+        </div>
+		  <!-- Activity Card 1 -->
+        <div class="activity-card">
+            <div class="card-image"><img src= "koko5.jpg" alt="photo"></div>
+            <div class="card-content">
+                <span class="card-category">Club</span>
+                <h3 class="card-title">Club' Teambuilding</h3>
+                <p class="card-role">Facilitator</p>
+                <p class="card-date">October 2024</p>
+                
+            </div>
+        </div>
+
+	        <!-- Activity Card 2 -->
+        <div class="activity-card">
+            <div class="card-image"><img src= "koko4.jpg" alt="photo"></div>
+            <div class="card-content">
+                <span class="card-category">Organization</span>
+                <h3 class="card-title">Special Student Parliament 2023/2024</h3>
+                <p class="card-role">Committee Member</p>
+                <p class="card-date">December 2024</p>
+                
+            </div>
+        </div>
+		
+		<div class="activity-card">
+            <div class="card-image"><img src= "mrsm1.jpg" alt="photo"></div>
+            <div class="card-content">
+                <span class="card-category">Student's Council</span>
+                <h3 class="card-title">Anual Leadership Camp</h3>
+                <p class="card-role">Vice President</p>
+                <p class="card-date">February 2022</p>
+                
+            </div>
+        </div>
+		
+		<div class="activity-card">
+            <div class="card-image"><img src= "mrsm2.jpg" alt="photo"></div>
+            <div class="card-content">
+                <span class="card-category">High School</span>
+                <h3 class="card-title">Mock Interview</h3>
+                <p class="card-role">Committee Member</p>
+                <p class="card-date">November 2022</p>
+               
+            </div>
+        </div>
+</div>
+       
+            </div>
+        </div>
+</body>
+</html>
+
+
+</body>
+</html>

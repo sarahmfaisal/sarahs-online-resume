@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biodata - Sarah Binti Mohammad Faisal</title>
+</head>
+<body>
+
+ <style>
+
+    .social-links {
+        display: flex;
+        gap: 15px;
+        margin-top: 15px;
+    }
+
+    .social-icon {
+        width: 40px;
+        height: 40px;
+        background: white;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+        font-weight: bold;
+        color: #667eea;
+        transition: all 0.3s ease;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    }
+
+    .social-icon:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 6px 20px rgba(102, 126, 234, 0.5);
+        background: #667eea;
+        color: white;
+    }
+    * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+		
+		
+.main-title {
+  text-align: center;
+  font-size: 50px;
+  font-weight: bold;
+  margin-top: 30px;
+  margin-bottom: 5px;
+  font-family: 'Times New Roman', serif;
+  color: black;
+  border: 3px solid black;       /* Frame */
+  padding: 15px 30px;            /* Space inside frame */
+  display: inline-block;         /* Shrink to fit text */
+  border-radius: 12px;           /* Rounded corners */
+  background-color: white;       /* Optional */
+}
+
+.title-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;  /* vertically aligned */
+  gap: 20px;            /* space between photo and text */
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.title-photo {
+  width: 200px;          /* adjust size */
+  height: 200px;
+  border-radius: 50%;   /* make photo round */
+  object-fit: cover;
+  border: 3px solid black;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: white;
+  background-color: #333;
+  padding: 10px 18px;
+  border-radius: 10px;
+  margin: 10px;
+  font-weight: bold;
+  display: inline-block;
+
+}
+
+.nav-link:hover {
+  background-color: #555;
+        transform: translateY(-5px);
+        box-shadow: 0 6px 20px rgba(102, 126, 234, 0.5);
+    }
+		
+body {
+background-image:url('OIP.jpg');
+background-repeat: no-repeat;
+background-attachment:fixed;
+background-size:cover;
+
+}
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+        section {
+            margin-bottom: 50px;
+            padding: 30px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        h2 {
+            color: #667eea;
+            font-size: 1.8em;
+            margin-bottom: 5px;
+            padding-bottom: 10px;
+            border-bottom: 3px solid #667eea;
+        }
+        .about-text {
+            font-size: 1.1em;
+            color: #555;
+        }
+         .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            margin-top: 20px;
+        }
+        .skill-item {
+            background: #f8f9fa;
+            padding: 15px 20px;
+            border-radius: 8px;
+            border-left: 4px solid #667eea;
+            transition: transform 0.3s;
+        }
+        .skill-item:hover {
+            transform: translateX(5px);
+            background: #e9ecef;
+        }
+        .education-item, .work-item {
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            margin-bottom: 15px;
+            border-left: 4px solid #764ba2;
+        }
+        .work-title {
+            color: #667eea;
+            font-size: 1.2em;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        .date {
+            color: #888;
+            font-style: italic;
+            margin-bottom: 10px;
+        }
+		
+		.subtitle {
+            font-size: 18px;
+        }
+	 /* Download CV Button */
+    .download-section {
+        text-align: center;
+        margin-top: 30px;
+        padding-top: 30px;
+        border-top: 2px solid #e9ecef;
+    }
+
+    .download-btn {
+        display: inline-block;
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        color: white;
+        padding: 15px 40px;
+        border-radius: 30px;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 1.1em;
+        transition: all 0.3s ease;
+        box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
+    }
+
+    .download-btn:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 6px 25px rgba(102, 126, 234, 0.6);
+    }
+	
+	
+
+
+        .info-list {
+            list-style: none;
+            padding: 0;
+            font-size: 18px;
+        }
+
+        .info-list li {
+            padding: 12px 0;
+            border-bottom: 1px solid #eee;
+        }
+
+        .info-label {
+            font-weight: bold;
+            color: #2E4A7B;
+        }
+		
+		 /* Biodata Card */
+		 
+   .biodata-container {
+    max-width: 800px;
+    margin: 30px auto;
+    background: white;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+.section-title {
+    text-align: center;
+    color: #6c63ff;
+    margin-bottom: 25px;
+    font-size: 28px;
+}
+
+.biodata-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.biodata-table th {
+    width: 35%;
+    text-align: left;
+    padding: 14px;
+    background: #f3f4ff;
+    color: #4a4a8a;
+    font-weight: bold;
+}
+
+.biodata-table td {
+    padding: 14px;
+    background: #ffffff;
+}
+
+.biodata-table tr {
+    border-bottom: 1px solid #eee;
+}
+
+.biodata-table tr:last-child {
+    border-bottom: none;
+}
+
+.biodata-table tr:hover {
+    background: #f9f9ff;
+}
+
+ 
+    h1 {
+        color: #4b4b8f;
+        margin-bottom: 5px;
+    }
+
+    .subtitle {
+        color: #666;
+        font-size: 18px;
+        margin-bottom: 20px;
+    }
+
+    .info {
+        margin-top: 30px;
+    }
+
+    .info-row {
+        display: flex;
+        margin-bottom: 15px;
+    }
+
+    .label {
+        width: 180px;
+        font-weight: bold;
+        color: #4b4b8f;
+    }
+
+    .value {
+        color: #333;
+    }
+
+    @media (max-width: 600px) {
+        .profile {
+            text-align: center;
+            justify-content: center;
+        }
+        .label {
+            width: 130px;
+        }
+    }
+	
+	.bar {
+    background: #e0e5ff;
+    border-radius: 10px;
+    height: 10px;
+}
+
+.bar span {
+    display: block;
+    height: 100%;
+    background: #6c7cff;
+    border-radius: 10px;
+}
+.skill-name {
+    margin-bottom: 10px; /* gap between text and bar */
+    font-weight: bold;
+}
+
+/* Skill levels */
+.bm {
+    width: 90%;   /* change this */
+}
+
+.bi {
+    width: 80%;
+}
+
+.ar {
+    width: 40%;
+}
+
+  /* Skill Card with Dropdown */
+    .skill-card {
+        background: #f8f9fa;
+        border-radius: 12px;
+        overflow: hidden;
+        box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+        transition: all 0.3s ease;
+    }
+
+    .skill-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+    }
+
+    .skill-header {
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        color: white;
+        padding: 20px;
+        cursor: pointer;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        transition: all 0.3s ease;
+    }
+
+    .skill-header:hover {
+        background: linear-gradient(135deg, #5568d3 0%, #65408b 100%);
+    }
+
+    .skill-title {
+        font-size: 1.3em;
+        font-weight: bold;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+		
+    }
+
+    .dropdown-icon {
+        font-size: 1.5em;
+        transition: transform 0.3s ease;
+    }
+
+    .skill-card.active .dropdown-icon {
+        transform: rotate(180deg);
+    }
+
+    /* Dropdown Content */
+    .skill-content {
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.5s ease, padding 0.3s ease;
+        padding: 0 20px;
+		text-align:left;
+		
+    }
+
+    .skill-card.active .skill-content {
+        max-height: 1000px;
+        padding: 20px;
+		
+    }
+
+    .projects-title {
+        color: black;
+        font-weight: bold;
+        margin-bottom: 15px;
+        font-size: 1.1em;
+		text-align:left;
+		
+    }
+	
+.movie-container {
+    display: flex;
+    gap: 30px;              /* space between cards */
+    justify-content: center;
+    flex-wrap: wrap;        /* responsive */
+}
+
+.movie-card {
+    width: 210px;
+    text-align: center;
+	
+}
+
+.movie-card img {
+    width: 100%;
+    border-radius: 10px;
+	margin-top: 20px;
+}
+
+.audio-box {
+    text-align: center;
+    margin: 30px auto;
+}
+
+</style>
+
+<div class="title-container">
+    <img src="enhance.png" class="title-photo" alt="Sarah's Photo">
+        <h1 class="main-title">Sarah Binti Mohammad Faisal</h1>
+        <br>
+        <div class="social-links">
+           <a href="https://www.linkedin.com/in/sarah-mohammad-faisal-ba0907373/" target="_blank"class="social-icon" title="Email">ld</a>
+            <a href="https://wa.me/qr/L4J2UEE3RSELC1"target="_blank"class="social-icon" title="Whatsapp">wa</a>
+            <a href="https://www.instagram.com/ssarahhfaisal/"target="_blank" class="social-icon" title="Instagram">ig</a>
+        </div>
+</div>
+
+ <br/>
+<h3 align="center">
+<font face= "Arial">
+<a class="nav-link" href= "index.html"> HOME </a> &nbsp;&nbsp;&nbsp;&nbsp;
+<a class="nav-link" href= "biodata.html"> BIODATA </a>&nbsp;&nbsp;&nbsp;&nbsp;
+<a class="nav-link" href= "koko.html"> EXTRA CURICCULAR </a>&nbsp;&nbsp;&nbsp;&nbsp;
+<a class="nav-link" href= "gallery.html"> GALLERY  </a>&nbsp;&nbsp;&nbsp;&nbsp;
+</font>
+
+ 
+
+     <!-- Biodata Section -->
+<div class="biodata-container">
+    <h2 class="section-title">Biodata</h2>
+
+    <table class="biodata-table">
+        <tr>
+            <th>Full Name</th>
+            <td>Sarah Binti Mohammad Faisal</td>
+        </tr>
+        <tr>
+            <th>Gender</th>
+            <td>Female</td>
+        </tr>
+        <tr>
+            <th>Date of Birth</th>
+            <td>22 July 2005</td>
+        </tr>
+        <tr>
+            <th>Email</th>
+            <td>sarahm.faisal1822@gmail.com</td>
+        </tr>
+        <tr>
+            <th>Phone</th>
+            <td>011-10140220</td>
+        </tr>
+        <tr>
+            <th>Nationality</th>
+            <td>Malaysian</td>
+        </tr>
+    </table>
+</div>
+
+
+<div class="container">
+<div class= "biodata-card">
+
+ <div class="profile">
+        
+        <div>
+            <h1>Skills</h1>
+			<br>
+        </div>
+		
+    </div>
+	<div class="skill-item">
+    <p class="skill-name">Microsoft Application</p>
+    <div class="bar">
+        <span class="bm"></span>
+    </div>
+</div>
+<div class="skill-item">
+    <p class="skill-name">Canva</p>
+    <div class="bar">
+        <span class="bi"></span>
+    </div>
+</div>
+
+<div class="skill-item">
+    <p class="skill-name">Programming</p>
+    <div class="bar">
+        <span class="ar"></span>
+    </div>
+</div>
+</div>
+<br>
+<br>
+	<!-- Skills Section -->
+    <div class="skills-section">
+        <h2 class="section-title">Interest</h2> 
+        <div class="skills-grid">
+         
+            <!--   Card 1 -->
+            <div class="skill-card">
+                <div class="skill-header" onclick="toggleSkill(this)">
+                    <div class="skill-title">
+                        <span>🎭</span>
+                        <span> Entertainment </span>
+                    </div>
+                    <span class="dropdown-icon">▼</span>
+                </div>
+                <div class="skill-content">
+                <div class="movie-container">
+    
+    <div class="movie-card">
+        <h3>Favourite Movies:</h3>
+        <img src="fav1.jpg" alt="Pride and Prejudice">
+        <a href="https://www.youtube.com/watch?v=Ur_DIHs92NM"target="_blank"> Pride & Prejudice</a>
+    </div>
+	<br>
+	<div class="movie-card">
+        <h3>Favourite Drama:</h3>
+        <img src="fav2.jpg" alt="Moving">
+        <a href="https://www.youtube.com/watch?v=SZFRw7MSPog"target="_blank"> Moving</a>
+    </div>
+	<br>
+	<div class="movie-card">
+        <h3>Favourite Podcast:</h3>
+        <img src="fav3.jpg" alt="Rotten Mango">
+        <a href="https://www.youtube.com/channel/UCo9ZZ04kIhN_8xGxvnjaduQ"target="_blank"> Rotten Manggo</a>
+    </div>
+	</div>
+</div>
+</div>
+</div>
+
+<br>
+				  
+            <!--   Card 2-->
+            <div class="skill-card">
+                <div class="skill-header" onclick="toggleSkill(this)">
+                    <div class="skill-title">
+                        <span>🎵</span>
+                        <span> Songs </span>
+                    </div>
+                    <span class="dropdown-icon">▼</span>
+                </div>
+                <div class="skill-content">
+                    <div class="projects-title">Favourite Song:</div>
+                    <div class="audio-box">
+                   <div class="project-title"><h3>Magnolia- Laufey</h3>
+				   <br>
+                  <audio controls>
+                  <source src="audio.mp3" type="audio/mpeg">
+                 </audio>
+        </div>
+		</div>
+		</div>
+            </div>
+			</div>
+			  <br>
+            <!--   Card 3-->
+            <div class="skill-card">
+                <div class="skill-header" onclick="toggleSkill(this)">
+                    <div class="skill-title">
+                        <span>💬</span>
+                        <span>Hobbies</span>
+                    </div>
+                    <span class="dropdown-icon">▼</span>
+                </div>
+                <div class="skill-content">
+                      <div class="movie-card">
+       
+	</div><div class="skill-content">
+                <div class="movie-container">
+    
+    <div class="movie-card">
+        
+        <img src="hobi1.jpeg" alt="Reading">
+        <p><strong>Reading</strong></p>
+    </div>
+	<br>
+	<div class="movie-card">
+        
+        <img src="hobi2.jpeg" alt="Swimming">
+        <p><strong>Swimming</strong></p>
+    </div>
+	<br>
+	<div class="movie-card">
+        
+        <img src="hobi3.jpeg" alt="Travelling">
+        <p><strong>Travelling</strong></p>
+    </div>
+	</div>
+</div>
+</div>
+                  </div>
+				  </div>
+                  </div>
+</div>
+</div>
+
+<script>
+function toggleSkill(header) {
+    const card = header.parentElement;
+    const isActive = card.classList.contains('active');
+    
+    // Close all other cards
+    document.querySelectorAll('.skill-card').forEach(c => {
+        c.classList.remove('active');
+    });
+    
+    // Toggle current card
+    if (!isActive) {
+        card.classList.add('active');
+    }
+}
+</script> 	
+</body>
+</html>
+
